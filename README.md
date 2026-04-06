@@ -2,7 +2,7 @@
 
 A modern, dark-luxury personal portfolio website built to showcase my experience in **Digital & AI Strategy, Product Management, and Consulting**.
 
-🔗 **Live Site:** [denziljosteve.github.io/portfolio](https://denziljosteve.github.io/portfolio)
+🔗 **Live Site:** [denziljosteve.github.io](https://denziljosteve.github.io)
 
 ---
 
