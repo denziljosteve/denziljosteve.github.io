@@ -47,6 +47,14 @@
   object-position: top center;
 }
 
+
+/* Logo in the NavBar */
+.logo-img {
+  height: 100px;   /* adjust size */
+  width: auto;
+  object-fit: contain;
+}
+
 /* ── Reset & Base ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; font-size: 16px; }
