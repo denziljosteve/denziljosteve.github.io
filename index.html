@@ -1,581 +1,831 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Denzil Fernandes — Digital Strategy & AI</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts: Playfair Display + DM Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
-</head>
-<body>
-
-  <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
-  <nav id="navbar">
-    <div class="nav-inner">
-      <!-- <a href="#" class="nav-logo">Denzil Fernandes</a> -->
-      <a href="#" class="nav-logo">
-        <img src="Denzil Josteve Fernandes Logo.png" alt="Logo" class="logo-img">
-      </a> 
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#leadership">More</a></li>
-        <li><a href="#contact" class="nav-cta">Contact</a></li>
-      </ul>
-      <button class="hamburger" id="hamburger" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <!-- mobile drawer -->
-    <div class="mobile-menu" id="mobileMenu">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#leadership">More</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
-  <section id="hero">
-    <!-- Ambient orbs -->
-    <div class="orb orb-1"></div>
-    <div class="orb orb-2"></div>
-    <div class="orb orb-3"></div>
-    <!-- Grid overlay -->
-    <div class="grid-overlay"></div>
-
-    <div class="hero-content">
-      <div class="hero-avatar reveal"><img src="Denzil Josteve Fernandes.png" alt="Denzil Fernandes" /></div>
-      <p class="hero-eyebrow reveal">HEC Paris · MiM · Digital Innovation</p>
-      <h1 class="hero-name reveal delay-1">Denzil Josteve<br /><em>Fernandes</em></h1>
-      <p class="hero-tagline reveal delay-2">
-        Digital &amp; AI Strategy &nbsp;·&nbsp; Product &nbsp;·&nbsp; Consulting
-      </p>
-      <p class="hero-sub reveal delay-3">
-        Bridging technology and business to build intelligent,<br class="br-desktop" /> scalable solutions at the intersection of AI and strategy.
-      </p>
-      <div class="hero-actions reveal delay-4">
-        <a href="#contact" class="btn btn-primary">Let's Connect <i data-lucide="arrow-right"></i></a>
-        <a href="Denzil Josteve Fernandes_CV.pdf" class="btn btn-ghost" download>Download CV <i data-lucide="download"></i></a>
-      </div>
-      <!-- Metrics strip -->
-      <div class="hero-metrics reveal delay-5">
-        <div class="metric">
-          <span class="metric-num">#1</span>
-          <span class="metric-label">MiM Worldwide<br />(FT Rankings)</span>
-        </div>
-        <div class="metric-divider"></div>
-        <div class="metric">
-          <span class="metric-num">4+</span>
-          <span class="metric-label">Years of<br />Experience</span>
-        </div>
-        <div class="metric-divider"></div>
-        <div class="metric">
-          <span class="metric-num">2</span>
-          <span class="metric-label">Countries<br />Worked In</span>
-        </div>
-        <div class="metric-divider"></div>
-        <div class="metric">
-          <span class="metric-num">50+</span>
-          <span class="metric-label">Automation<br />Scripts Built</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <a href="#about" class="scroll-hint">
-      <i data-lucide="chevron-down"></i>
-    </a>
-  </section>
-
-  <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
-  <section id="about" class="section">
-    <div class="container two-col">
-      <div class="about-left fade-in">
-        <span class="section-label">About Me</span>
-        <h2 class="section-title">Strategist.<br /><em>Builder.</em><br />Innovator.</h2>
-      </div>
-      <div class="about-right fade-in delay-1">
-        <p class="about-lead">
-          I'm a Digital &amp; AI Strategy professional with an engineering foundation and an HEC Paris MiM — ranked <strong>#1 worldwide by the Financial Times</strong>.
-        </p>
-        <p class="about-body">
-          My career sits at the crossroads of technology, business strategy, and product thinking. From engineering automation pipelines at Wipro to identifying AI use cases at Wabtec Corporation in Paris, I translate complex technical capabilities into tangible business value.
-        </p>
-        <p class="about-body">
-          I thrive in ambiguous, fast-moving environments — whether it's scoping an AI adoption roadmap, redesigning supply-chain workflows, or leading cross-functional consulting engagements. I bring a rare blend of <strong>coding ability, analytical rigour, and strategic storytelling</strong>.
-        </p>
-        <div class="about-pills">
-          <span class="pill"><i data-lucide="map-pin"></i> Bengaluru / Paris</span>
-          <span class="pill"><i data-lucide="languages"></i> English · Hindi · Kannada · French</span>
-          <span class="pill"><i data-lucide="graduation-cap"></i> HEC Paris · PESIT</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
-  <section id="experience" class="section section-dark">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Career</span>
-        <h2 class="section-title">Professional <em>Experience</em></h2>
-      </div>
-
-      <div class="timeline">
-
-        <!-- Wabtec -->
-        <div class="timeline-item fade-in">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Digital &amp; AI Strategy Intern</h3>
-                <p class="tc-company">Wabtec Corporation</p>
-              </div>
-              <div class="tc-meta">
-                <span class="tc-period">Feb 2025 – Apr 2025</span>
-                <span class="tc-location"><i data-lucide="map-pin"></i> Paris, France</span>
-              </div>
-            </div>
-            <ul class="tc-bullets">
-              <li>Conducted gap analysis between existing AI capabilities and business requirements, translating insights into <strong>actionable AI feature recommendations</strong></li>
-              <li>Identified <strong>15 high-impact AI use cases</strong> to improve efficiency, reduce costs, and accelerate decision-making across operations</li>
-              <li>Led strategic AI &amp; GenAI analysis across internal operations and decision-support systems</li>
-              <li>Collaborated with stakeholders to define an AI adoption roadmap focusing on usability, scalability, and value delivery</li>
-            </ul>
-            <div class="tc-tags">
-              <span>AI Strategy</span><span>GenAI</span><span>Gap Analysis</span><span>Stakeholder Management</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Sunshine -->
-        <div class="timeline-item fade-in delay-1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Logistics &amp; Supply Chain Intern</h3>
-                <p class="tc-company">Sunshine Concrete Blocks</p>
-              </div>
-              <div class="tc-meta">
-                <span class="tc-period">Jun 2023 – Apr 2024</span>
-                <span class="tc-location"><i data-lucide="map-pin"></i> Bengaluru, India</span>
-              </div>
-            </div>
-            <ul class="tc-bullets">
-              <li>Managed end-to-end order fulfilment cycle for <strong>25+ monthly orders</strong>, from order reception to coordinating shipments with vendors</li>
-              <li>Maintained precise supply chain records and documentation, achieving a <strong>95% accuracy rate</strong> in tracking and reporting</li>
-              <li>Monitored and optimized inventory levels, reducing excess stock by <strong>25%</strong> through data-driven management strategies</li>
-            </ul>
-            <div class="tc-tags">
-              <span>Supply Chain</span><span>Inventory Optimization</span><span>Vendor Management</span><span>CRM</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- 180DC -->
-        <div class="timeline-item fade-in delay-1">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Digital Consultant &amp; Team Leader</h3>
-                <p class="tc-company">180 Degrees Consulting – HEC Paris</p>
-              </div>
-              <div class="tc-meta">
-                <span class="tc-period">Feb 2023 – Jun 2023</span>
-                <span class="tc-location"><i data-lucide="map-pin"></i> Paris, France</span>
-              </div>
-            </div>
-            <ul class="tc-bullets">
-              <li>Analyzed client operational models with cross-functional teams, identifying user pain points and recommending <strong>digital optimization strategies</strong></li>
-              <li>Designed a financial &amp; operational KPI dashboard using HubSpot, improving <strong>executive visibility and data-driven decision-making</strong></li>
-              <li>Delivered strategic, data-backed recommendations to stakeholders, translating insights into actionable outcomes</li>
-            </ul>
-            <div class="tc-tags">
-              <span>Consulting</span><span>KPI Dashboard</span><span>HubSpot</span><span>Strategy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Wipro -->
-        <div class="timeline-item fade-in delay-2">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Project Engineer — Open-Source Program Office</h3>
-                <p class="tc-company">Wipro Ltd.</p>
-              </div>
-              <div class="tc-meta">
-                <span class="tc-period">Sep 2020 – Jun 2022</span>
-                <span class="tc-location"><i data-lucide="map-pin"></i> Bengaluru, India</span>
-              </div>
-            </div>
-            <ul class="tc-bullets">
-              <li>Designed, developed, and tested <strong>two web applications</strong> (PassForge &amp; UMS), improving system efficiency and user experience</li>
-              <li>Led a team of 3 in an Agile environment to deliver <strong>50+ automation scripts</strong> using Ansible and Terraform for AWS and Azure deployments</li>
-              <li>Created and managed <strong>10+ visualization dashboards</strong> using Grafana, Kibana, and Chronograf for real-time infrastructure monitoring</li>
-              <li>Achieved <strong>DevOps Professional Certification</strong> via a rigorous 9-week programme</li>
-            </ul>
-            <div class="tc-tags">
-              <span>Agile / SCRUM</span><span>AWS &amp; Azure</span><span>DevOps</span><span>Ansible</span><span>Terraform</span><span>Grafana</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- GetMyUni -->
-        <div class="timeline-item fade-in delay-3">
-          <div class="timeline-dot"></div>
-          <div class="timeline-card">
-            <div class="tc-header">
-              <div>
-                <h3 class="tc-role">Digital Marketing Intern</h3>
-                <p class="tc-company">GetMyUni</p>
-              </div>
-              <div class="tc-meta">
-                <span class="tc-period">Jan 2020 – Feb 2020</span>
-                <span class="tc-location"><i data-lucide="map-pin"></i> Bengaluru, India</span>
-              </div>
-            </div>
-            <ul class="tc-bullets">
-              <li>Led Push Notification and SMS marketing strategies, and managed <strong>Google Ads campaigns for 5 clients</strong></li>
-              <li>Designed and enhanced <strong>75+ landing pages</strong> for diverse campaigns, improving conversion rates</li>
-              <li>Played a pivotal role in lead generation, resulting in <strong>100,000+ leads</strong> within a 2-month timeframe</li>
-              <li>Developed <strong>3 Python scripts</strong> for automated lead processing, significantly reducing turnaround time</li>
-            </ul>
-            <div class="tc-tags">
-              <span>Digital Marketing</span><span>Salesforce</span><span>Python Automation</span><span>Google Ads</span><span>Lead Generation</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
-  <section id="education" class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Academia</span>
-        <h2 class="section-title">Education</h2>
-      </div>
-
-      <div class="edu-grid">
-
-        <!-- HEC Paris -->
-        <div class="edu-card edu-featured fade-in">
-          <div class="edu-badge">#1 Worldwide · FT Rankings</div>
-          <div class="edu-logo-placeholder">HEC Paris</div>
-          <h3 class="edu-degree">Master in Management</h3>
-          <p class="edu-spec">Digital Innovation &amp; Acceleration</p>
-          <p class="edu-period"><i data-lucide="calendar"></i> Sep 2022 – Oct 2025 &nbsp;·&nbsp; GPA: 3.62 / 4.0</p>
-          <ul class="edu-courses">
-            <li>Product Management</li>
-            <li>Business Strategy</li>
-            <li>Digital Strategy</li>
-            <li>Business Analytics</li>
-            <li>Financial Strategy</li>
-            <li>Digital Transformation</li>
-            <li>Strategic Marketing</li>
-            <li>Econometrics &amp; Statistics</li>
-          </ul>
-        </div>
-
-        <!-- PESIT -->
-        <div class="edu-card fade-in delay-1">
-          <div class="edu-badge">One of the top 5 engineering colleges in Karnataka</div>
-          <div class="edu-logo-placeholder edu-logo-sm">PESIT - Bangalore South Campus</div>
-          <h3 class="edu-degree">Bachelor of Engineering</h3>
-          <p class="edu-spec">Information Science &amp; Engineering</p>
-          <p class="edu-period"><i data-lucide="calendar"></i> Aug 2016 – Aug 2020 &nbsp;·&nbsp; GPA: 8.47 / 10</p>
-          <ul class="edu-courses">
-            <li>Algorithms &amp; Data Structures</li>
-            <li>Machine Learning</li>
-            <li>Database Management</li>
-            <li>Cybersecurity</li>
-            <li>Cloud Computing</li>
-            <li>Software Engineering (SDLC)</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
-  <section id="projects" class="section section-dark">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Work</span>
-        <h2 class="section-title">Featured <em>Projects</em></h2>
-      </div>
-
-      <div class="projects-grid">
-
-        <div class="project-card fade-in">
-          <div class="project-icon"><i data-lucide="shield-check"></i></div>
-          <span class="project-type">Master's Thesis</span>
-          <h3>Blockchain-Backed NFTs as Digital Proof of Authenticity</h3>
-          <p>Developed a solution leveraging blockchain technology and NFTs to enhance product transparency, combat counterfeiting, and establish verifiable digital provenance for physical goods.</p>
-          <div class="project-tags"><span>Blockchain</span><span>NFT</span><span>Anti-counterfeiting</span><span>Web3</span></div>
-        </div>
-
-        <div class="project-card fade-in delay-1">
-          <div class="project-icon"><i data-lucide="brain-circuit"></i></div>
-          <span class="project-type">AI / LLM · Ongoing</span>
-          <h3>No-Code RAG Application with AstraDB</h3>
-          <p>Building a no-code Retrieval-Augmented Generation (RAG) application using AstraDB and large language models, making advanced AI capabilities accessible to non-technical users.</p>
-          <div class="project-tags"><span>RAG</span><span>LLMs</span><span>AstraDB</span><span>No-Code</span></div>
-        </div>
-
-        <div class="project-card fade-in delay-2">
-          <div class="project-icon"><i data-lucide="shopping-bag"></i></div>
-          <span class="project-type">Mobile App · PESIT</span>
-          <h3>Viz-Aid: AI Shopping Assistant</h3>
-          <p>Developed a mobile application using Java and the COCO dataset that helps users identify products in the real world and find relevant information, addressing accessibility in retail environments.</p>
-          <div class="project-tags"><span>Java</span><span>Computer Vision</span><span>COCO Dataset</span><span>Mobile</span></div>
-        </div>
-
-        <div class="project-card fade-in delay-3">
-          <div class="project-icon"><i data-lucide="bar-chart-2"></i></div>
-          <span class="project-type">Data Science · PESIT</span>
-          <h3>Crime Rate Predictive Analysis</h3>
-          <p>Conducted comprehensive predictive analysis of crime rates across India using unsupervised and supervised ML techniques (K-means clustering, K-NN classification) to surface actionable insights.</p>
-          <div class="project-tags"><span>K-means</span><span>K-NN</span><span>Python</span><span>Data Science</span></div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
-  <section id="skills" class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Capabilities</span>
-        <h2 class="section-title">Skills &amp; <em>Expertise</em></h2>
-      </div>
-
-      <div class="skills-grid">
-
-        <div class="skill-group fade-in">
-          <div class="skill-group-icon"><i data-lucide="briefcase"></i></div>
-          <h3>Business &amp; Strategy</h3>
-          <div class="skill-pills">
-            <span>Business Strategy</span>
-            <span>Digital Strategy</span>
-            <span>AI Strategy</span>
-            <span>Product Management</span>
-            <span>Consulting</span>
-            <span>Financial Analysis</span>
-            <span>Market Research</span>
-            <span>Risk Analysis</span>
-            <span>Agile / SCRUM</span>
-            <span>Stakeholder Management</span>
-          </div>
-        </div>
-
-        <div class="skill-group fade-in delay-1">
-          <div class="skill-group-icon"><i data-lucide="code-2"></i></div>
-          <h3>Programming &amp; Data</h3>
-          <div class="skill-pills">
-            <span>Python</span>
-            <span>Java</span>
-            <span>SQL</span>
-            <span>Machine Learning</span>
-            <span>Data Analysis</span>
-            <span>Statistical Analysis</span>
-            <span>Ansible</span>
-            <span>Terraform</span>
-            <span>Linux</span>
-            <span>Git / GitHub</span>
-          </div>
-        </div>
-
-        <div class="skill-group fade-in delay-2">
-          <div class="skill-group-icon"><i data-lucide="layout-dashboard"></i></div>
-          <h3>Tools &amp; Platforms</h3>
-          <div class="skill-pills">
-            <span>Power BI</span>
-            <span>Tableau</span>
-            <span>Dataiku</span>
-            <span>Excel</span>
-            <span>Salesforce</span>
-            <span>HubSpot</span>
-            <span>Jira</span>
-            <span>bubble.io</span>
-            <span>Canva</span>
-            <span>AWS &amp; Azure</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Certifications -->
-      <div class="certs fade-in">
-        <h3 class="certs-title">Certifications</h3>
-        <div class="cert-cards">
-          <div class="cert-card"><i data-lucide="award"></i><span>Strategic Management &amp; Innovation</span></div>
-          <div class="cert-card"><i data-lucide="award"></i><span>Microsoft Excel for Business – Macquarie University</span></div>
-          <div class="cert-card"><i data-lucide="award"></i><span>Google Project Management</span></div>
-          <div class="cert-card"><i data-lucide="award"></i><span>Google Data Analytics</span></div>
-          <div class="cert-card"><i data-lucide="award"></i><span>DevOps Professional – Wipro</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ═══════════════════════════ LEADERSHIP ═══════════════════════════ -->
-  <section id="leadership" class="section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Beyond Work</span>
-        <h2 class="section-title">Leadership &amp; <em>Community</em></h2>
-      </div>
-
-      <div class="leadership-grid">
-
-        <div class="lead-card fade-in">
-          <div class="lead-icon"><i data-lucide="users"></i></div>
-          <div>
-            <h3>Indian Catholic Youth Movement (ICYM)</h3>
-            <p class="lead-role">President &amp; Member · Neermarga</p>
-            <ul class="lead-bullets">
-              <li>Coordinated and executed <strong>10+ cultural events</strong> for Christmas and New Year's Eve celebrations within the church community</li>
-              <li>Represented the parish in multiple sports events, showcasing leadership and team spirit</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="lead-card fade-in delay-1">
-          <div class="lead-icon"><i data-lucide="heart-handshake"></i></div>
-          <div>
-            <h3>Volunteer Work</h3>
-            <p class="lead-role">Community Service</p>
-            <ul class="lead-bullets">
-              <li>Engaged in visits to orphanages and old age homes as part of ongoing community outreach</li>
-              <li>Contributed to initiatives including the <strong>Swachh Bharat Mission</strong></li>
-              <li>Served as tutor and instructor at <strong>summer camps for high school students</strong></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="lead-card fade-in delay-2">
-          <div class="lead-icon"><i data-lucide="drama"></i></div>
-          <div>
-            <h3>Theatre &amp; Performing Arts</h3>
-            <p class="lead-role">Actor</p>
-            <ul class="lead-bullets">
-              <li>Performed roles in a full theatrical production and multiple playlets, showcasing versatility and commitment to the performing arts</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ ACHIEVEMENTS ═══════════════════════════ -->
-  <section id="achievements" class="section section-dark achievements-section">
-    <div class="container">
-      <div class="section-header fade-in">
-        <span class="section-label">Recognition</span>
-        <h2 class="section-title">Achievements</h2>
-      </div>
-      <div class="ach-grid">
-        <div class="ach-card fade-in">
-          <span class="ach-place gold">1st</span>
-          <p class="ach-name">Impact Innovation Challenge</p>
-          <p class="ach-org">Leroy Merlin × HEC Paris</p>
-        </div>
-        <div class="ach-card fade-in delay-1">
-          <span class="ach-place gold">1st</span>
-          <p class="ach-name">Innovation in Mobility</p>
-          <p class="ach-org">HEC Paris</p>
-        </div>
-        <div class="ach-card fade-in delay-2">
-          <span class="ach-place silver">2nd</span>
-          <p class="ach-name">L'Oréal Super Challenge</p>
-          <p class="ach-org">HEC Paris</p>
-        </div>
-        <div class="ach-card fade-in delay-2">
-          <span class="ach-place silver">2nd</span>
-          <p class="ach-name">Supply Chain Simulation</p>
-          <p class="ach-org">HEC Paris</p>
-        </div>
-        <div class="ach-card fade-in delay-2">
-          <span class="ach-place silver">700</span>
-          <p class="ach-name">GMAT</p>
-          <!-- <p class="ach-org">HEC Paris</p> -->
-        </div>
-        <div class="ach-card fade-in delay-2">
-          <span class="ach-place silver">Top 10</span>
-          <p class="ach-name">Inginius 2k17</p>
-          <p class="ach-org">PESIT Bangalore</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
-  <section id="contact" class="section contact-section">
-    <div class="orb orb-4"></div>
-    <div class="container contact-inner">
-      <div class="fade-in">
-        <span class="section-label">Get in Touch</span>
-        <h2 class="section-title contact-title">Let's Build<br /><em>Something Great</em></h2> <br />
-        <p class="contact-sub">Open to opportunities in Digital Strategy, AI, Product, and Consulting. Always happy to connect.</p>
-      </div>
-      <div class="contact-links fade-in delay-1">
-        <a href="mailto:denziljosteve@gmail.com" class="contact-link">
-          <i data-lucide="mail"></i>
-          <div>
-            <span class="cl-label">Email</span>
-            <span class="cl-val">denziljosteve@gmail.com</span>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denzil Fernandes — Digital Strategy & AI</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Playfair Display + DM Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Lucide Icons -->
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <!-- <a href="#" class="nav-logo">Denzil Fernandes</a> -->
+        <a href="#" class="nav-logo">
+          <img
+            src="Denzil Josteve Fernandes Logo.png"
+            alt="Logo"
+            class="logo-img"
+          />
         </a>
-        <a href="https://linkedin.com/in/denziljosteve" target="_blank" class="contact-link">
-          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--gold);flex-shrink:0"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          <div>
-            <span class="cl-label">LinkedIn</span>
-            <span class="cl-val">Denzil Josteve Fernandes</span>
-          </div>
-        </a>
-        <a href="tel:+918867259630" class="contact-link">
-          <i data-lucide="phone"></i>
-          <div>
-            <span class="cl-label">Phone</span>
-            <span class="cl-val">+91 886 725 9630</span>
-          </div>
-        </a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#leadership">More</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <a href="Denzil Josteve Fernandes_CV.pdf" class="btn btn-primary btn-large fade-in delay-2" download>
-        Download Full CV &nbsp;<i data-lucide="download"></i>
+      <!-- mobile drawer -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#leadership">More</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="hero">
+      <!-- Ambient orbs -->
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <!-- Grid overlay -->
+      <div class="grid-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-avatar reveal">
+          <img src="Denzil Josteve Fernandes.png" alt="Denzil Fernandes" />
+        </div>
+        <p class="hero-eyebrow reveal">HEC Paris · MiM · Digital Innovation</p>
+        <h1 class="hero-name reveal delay-1">
+          Denzil Josteve<br /><em>Fernandes</em>
+        </h1>
+        <p class="hero-tagline reveal delay-2">
+          Digital &amp; AI Strategy &nbsp;·&nbsp; Product &nbsp;·&nbsp;
+          Consulting
+        </p>
+        <p class="hero-sub reveal delay-3">
+          Bridging technology and business to build intelligent,<br
+            class="br-desktop"
+          />
+          scalable solutions at the intersection of AI and strategy.
+        </p>
+        <div class="hero-actions reveal delay-4">
+          <a href="#contact" class="btn btn-primary"
+            >Let's Connect <i data-lucide="arrow-right"></i
+          ></a>
+          <a
+            href="Denzil Josteve Fernandes_CV.pdf"
+            class="btn btn-ghost"
+            download
+            >Download CV <i data-lucide="download"></i
+          ></a>
+        </div>
+        <!-- Metrics strip -->
+        <div class="hero-metrics reveal delay-5">
+          <div class="metric">
+            <span class="metric-num">#1</span>
+            <span class="metric-label">MiM Worldwide<br />(FT Rankings)</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric">
+            <span class="metric-num">4+</span>
+            <span class="metric-label">Years of<br />Experience</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric">
+            <span class="metric-num">2</span>
+            <span class="metric-label">Countries<br />Worked In</span>
+          </div>
+          <div class="metric-divider"></div>
+          <div class="metric">
+            <span class="metric-num">50+</span>
+            <span class="metric-label">Automation<br />Scripts Built</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <a href="#about" class="scroll-hint">
+        <i data-lucide="chevron-down"></i>
       </a>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
-  <footer>
-    <p>&nbsp;·&nbsp; © 2026 Denzil Josteve Fernandes &nbsp;·&nbsp;</p>
-  </footer>
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="about-left fade-in">
+          <span class="section-label">About Me</span>
+          <h2 class="section-title">
+            Strategist.<br /><em>Builder.</em><br />Innovator.
+          </h2>
+        </div>
+        <div class="about-right fade-in delay-1">
+          <p class="about-lead">
+            I'm a Digital &amp; AI Strategy professional with an engineering
+            foundation and an HEC Paris MiM — ranked
+            <strong>#1 worldwide by the Financial Times</strong>.
+          </p>
+          <p class="about-body">
+            My career sits at the crossroads of technology, business strategy,
+            and product thinking. From engineering automation pipelines at Wipro
+            to identifying AI use cases at Wabtec Corporation in Paris, I
+            translate complex technical capabilities into tangible business
+            value.
+          </p>
+          <p class="about-body">
+            I thrive in ambiguous, fast-moving environments — whether it's
+            scoping an AI adoption roadmap, redesigning supply-chain workflows,
+            or leading cross-functional consulting engagements. I bring a rare
+            blend of
+            <strong
+              >coding ability, analytical rigour, and strategic
+              storytelling</strong
+            >.
+          </p>
+          <div class="about-pills">
+            <span class="pill"
+              ><i data-lucide="map-pin"></i> Bengaluru / Paris</span
+            >
+            <span class="pill"
+              ><i data-lucide="languages"></i> English · Hindi · Kannada ·
+              French</span
+            >
+            <span class="pill"
+              ><i data-lucide="graduation-cap"></i> HEC Paris · PESIT</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
-</body>
+    <!-- ═══════════════════════════ EXPERIENCE ═══════════════════════════ -->
+    <section id="experience" class="section section-dark">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Career</span>
+          <h2 class="section-title">Professional <em>Experience</em></h2>
+        </div>
+
+        <div class="timeline">
+          <!-- Wabtec -->
+          <div class="timeline-item fade-in">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h3 class="tc-role">Digital &amp; AI Strategy Intern</h3>
+                  <p class="tc-company">Wabtec Corporation</p>
+                </div>
+                <div class="tc-meta">
+                  <span class="tc-period">Feb 2025 – Apr 2025</span>
+                  <span class="tc-location"
+                    ><i data-lucide="map-pin"></i> Paris, France</span
+                  >
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Conducted gap analysis between existing AI capabilities and
+                  business requirements, translating insights into
+                  <strong>actionable AI feature recommendations</strong>
+                </li>
+                <li>
+                  Identified <strong>15 high-impact AI use cases</strong> to
+                  improve efficiency, reduce costs, and accelerate
+                  decision-making across operations
+                </li>
+                <li>
+                  Led strategic AI &amp; GenAI analysis across internal
+                  operations and decision-support systems
+                </li>
+                <li>
+                  Collaborated with stakeholders to define an AI adoption
+                  roadmap focusing on usability, scalability, and value delivery
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>AI Strategy</span><span>GenAI</span
+                ><span>Gap Analysis</span><span>Stakeholder Management</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sunshine -->
+          <div class="timeline-item fade-in delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h3 class="tc-role">Logistics &amp; Supply Chain Intern</h3>
+                  <p class="tc-company">Sunshine Concrete Blocks</p>
+                </div>
+                <div class="tc-meta">
+                  <span class="tc-period">Jun 2023 – Apr 2024</span>
+                  <span class="tc-location"
+                    ><i data-lucide="map-pin"></i> Bengaluru, India</span
+                  >
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Managed end-to-end order fulfilment cycle for
+                  <strong>25+ monthly orders</strong>, from order reception to
+                  coordinating shipments with vendors
+                </li>
+                <li>
+                  Maintained precise supply chain records and documentation,
+                  achieving a <strong>95% accuracy rate</strong> in tracking and
+                  reporting
+                </li>
+                <li>
+                  Monitored and optimized inventory levels, reducing excess
+                  stock by <strong>25%</strong> through data-driven management
+                  strategies
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Supply Chain</span><span>Inventory Optimization</span
+                ><span>Vendor Management</span><span>CRM</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 180DC -->
+          <div class="timeline-item fade-in delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h3 class="tc-role">Digital Consultant &amp; Team Leader</h3>
+                  <p class="tc-company">180 Degrees Consulting – HEC Paris</p>
+                </div>
+                <div class="tc-meta">
+                  <span class="tc-period">Feb 2023 – Jun 2023</span>
+                  <span class="tc-location"
+                    ><i data-lucide="map-pin"></i> Paris, France</span
+                  >
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Analyzed client operational models with cross-functional
+                  teams, identifying user pain points and recommending
+                  <strong>digital optimization strategies</strong>
+                </li>
+                <li>
+                  Designed a financial &amp; operational KPI dashboard using
+                  HubSpot, improving
+                  <strong
+                    >executive visibility and data-driven
+                    decision-making</strong
+                  >
+                </li>
+                <li>
+                  Delivered strategic, data-backed recommendations to
+                  stakeholders, translating insights into actionable outcomes
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Consulting</span><span>KPI Dashboard</span
+                ><span>HubSpot</span><span>Strategy</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wipro -->
+          <div class="timeline-item fade-in delay-2">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h3 class="tc-role">
+                    Project Engineer — Open-Source Program Office
+                  </h3>
+                  <p class="tc-company">Wipro Ltd.</p>
+                </div>
+                <div class="tc-meta">
+                  <span class="tc-period">Sep 2020 – Jun 2022</span>
+                  <span class="tc-location"
+                    ><i data-lucide="map-pin"></i> Bengaluru, India</span
+                  >
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Designed, developed, and tested
+                  <strong>two web applications</strong> (PassForge &amp; UMS),
+                  improving system efficiency and user experience
+                </li>
+                <li>
+                  Led a team of 3 in an Agile environment to deliver
+                  <strong>50+ automation scripts</strong> using Ansible and
+                  Terraform for AWS and Azure deployments
+                </li>
+                <li>
+                  Created and managed
+                  <strong>10+ visualization dashboards</strong> using Grafana,
+                  Kibana, and Chronograf for real-time infrastructure monitoring
+                </li>
+                <li>
+                  Achieved
+                  <strong>DevOps Professional Certification</strong> via a
+                  rigorous 9-week programme
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Agile / SCRUM</span><span>AWS &amp; Azure</span
+                ><span>DevOps</span><span>Ansible</span><span>Terraform</span
+                ><span>Grafana</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- GetMyUni -->
+          <div class="timeline-item fade-in delay-3">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="tc-header">
+                <div>
+                  <h3 class="tc-role">Digital Marketing Intern</h3>
+                  <p class="tc-company">GetMyUni</p>
+                </div>
+                <div class="tc-meta">
+                  <span class="tc-period">Jan 2020 – Feb 2020</span>
+                  <span class="tc-location"
+                    ><i data-lucide="map-pin"></i> Bengaluru, India</span
+                  >
+                </div>
+              </div>
+              <ul class="tc-bullets">
+                <li>
+                  Led Push Notification and SMS marketing strategies, and
+                  managed <strong>Google Ads campaigns for 5 clients</strong>
+                </li>
+                <li>
+                  Designed and enhanced <strong>75+ landing pages</strong> for
+                  diverse campaigns, improving conversion rates
+                </li>
+                <li>
+                  Played a pivotal role in lead generation, resulting in
+                  <strong>100,000+ leads</strong> within a 2-month timeframe
+                </li>
+                <li>
+                  Developed <strong>3 Python scripts</strong> for automated lead
+                  processing, significantly reducing turnaround time
+                </li>
+              </ul>
+              <div class="tc-tags">
+                <span>Digital Marketing</span><span>Salesforce</span
+                ><span>Python Automation</span><span>Google Ads</span
+                ><span>Lead Generation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ EDUCATION ═══════════════════════════ -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Academia</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="edu-grid">
+          <!-- HEC Paris -->
+          <div class="edu-card edu-featured fade-in">
+            <div class="edu-badge">#1 Worldwide · FT Rankings</div>
+            <div class="edu-logo-placeholder">HEC Paris</div>
+            <h3 class="edu-degree">Master in Management</h3>
+            <p class="edu-spec">Digital Innovation &amp; Acceleration</p>
+            <p class="edu-period">
+              <i data-lucide="calendar"></i> Sep 2022 – Oct 2025 &nbsp;·&nbsp;
+              GPA: 3.62 / 4.0
+            </p>
+            <ul class="edu-courses">
+              <li>Product Management</li>
+              <li>Business Strategy</li>
+              <li>Digital Strategy</li>
+              <li>Business Analytics</li>
+              <li>Financial Strategy</li>
+              <li>Digital Transformation</li>
+              <li>Strategic Marketing</li>
+              <li>Econometrics &amp; Statistics</li>
+            </ul>
+          </div>
+
+          <!-- PESIT -->
+          <div class="edu-card fade-in delay-1">
+            <div class="edu-badge">
+              One of the top 5 engineering colleges in Karnataka
+            </div>
+            <div class="edu-logo-placeholder edu-logo-sm">
+              PESIT - Bangalore South Campus
+            </div>
+            <h3 class="edu-degree">Bachelor of Engineering</h3>
+            <p class="edu-spec">Information Science &amp; Engineering</p>
+            <p class="edu-period">
+              <i data-lucide="calendar"></i> Aug 2016 – Aug 2020 &nbsp;·&nbsp;
+              GPA: 8.47 / 10
+            </p>
+            <ul class="edu-courses">
+              <li>Algorithms &amp; Data Structures</li>
+              <li>Machine Learning</li>
+              <li>Database Management</li>
+              <li>Cybersecurity</li>
+              <li>Cloud Computing</li>
+              <li>Software Engineering (SDLC)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ PROJECTS ═══════════════════════════ -->
+    <section id="projects" class="section section-dark">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Work</span>
+          <h2 class="section-title">Featured <em>Projects</em></h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card fade-in">
+            <div class="project-icon"><i data-lucide="shield-check"></i></div>
+            <span class="project-type">Master's Thesis</span>
+            <h3>Blockchain-Backed NFTs as Digital Proof of Authenticity</h3>
+            <p>
+              Developed a solution leveraging blockchain technology and NFTs to
+              enhance product transparency, combat counterfeiting, and establish
+              verifiable digital provenance for physical goods.
+            </p>
+            <div class="project-tags">
+              <span>Blockchain</span><span>NFT</span
+              ><span>Anti-counterfeiting</span><span>Web3</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in delay-1">
+            <div class="project-icon"><i data-lucide="brain-circuit"></i></div>
+            <span class="project-type">AI / LLM · Ongoing</span>
+            <h3>No-Code RAG Application with AstraDB</h3>
+            <p>
+              Building a no-code Retrieval-Augmented Generation (RAG)
+              application using AstraDB and large language models, making
+              advanced AI capabilities accessible to non-technical users.
+            </p>
+            <div class="project-tags">
+              <span>RAG</span><span>LLMs</span><span>AstraDB</span
+              ><span>No-Code</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in delay-4">
+            <div class="project-icon"><i data-lucide="bot"></i></div>
+            <span class="project-type">AI Products · Custom GPT Portfolio</span>
+            <h3>
+              15+ Custom GPT Suite for Career, Strategy & Financial Analysis
+            </h3>
+            <p>
+              Built a portfolio of specialized AI assistants including Resume
+              Optimizer GPT, Interview Coach GPT, PRD Copilot, Case Interview
+              GPT, and Stock Analyzer GPT. Designed structured prompt
+              architectures for various use cases, enabling expert-level
+              decision support through modular AI agents.
+            </p>
+            <div class="project-tags">
+              <span>Custom GPTs</span><span>Prompt Engineering</span
+              ><span>AI Workflows</span><span>Product Strategy</span
+              ><span>Stock Analysis</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in delay-2">
+            <div class="project-icon"><i data-lucide="shopping-bag"></i></div>
+            <span class="project-type">Mobile App · PESIT</span>
+            <h3>Viz-Aid: AI Shopping Assistant</h3>
+            <p>
+              Developed a mobile application using Java and the COCO dataset
+              that helps users identify products in the real world and find
+              relevant information, addressing accessibility in retail
+              environments.
+            </p>
+            <div class="project-tags">
+              <span>Java</span><span>Computer Vision</span
+              ><span>COCO Dataset</span><span>Mobile</span>
+            </div>
+          </div>
+
+          <div class="project-card fade-in delay-3">
+            <div class="project-icon"><i data-lucide="bar-chart-2"></i></div>
+            <span class="project-type">Data Science · PESIT</span>
+            <h3>Crime Rate Predictive Analysis</h3>
+            <p>
+              Conducted comprehensive predictive analysis of crime rates across
+              India using unsupervised and supervised ML techniques (K-means
+              clustering, K-NN classification) to surface actionable insights.
+            </p>
+            <div class="project-tags">
+              <span>K-means</span><span>K-NN</span><span>Python</span
+              ><span>Data Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ SKILLS ═══════════════════════════ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Capabilities</span>
+          <h2 class="section-title">Skills &amp; <em>Expertise</em></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-group fade-in">
+            <div class="skill-group-icon"><i data-lucide="briefcase"></i></div>
+            <h3>Business &amp; Strategy</h3>
+            <div class="skill-pills">
+              <span>Business Strategy</span>
+              <span>Digital Strategy</span>
+              <span>AI Strategy</span>
+              <span>Product Management</span>
+              <span>Consulting</span>
+              <span>Financial Analysis</span>
+              <span>Market Research</span>
+              <span>Risk Analysis</span>
+              <span>Agile / SCRUM</span>
+              <span>Stakeholder Management</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in delay-1">
+            <div class="skill-group-icon"><i data-lucide="code-2"></i></div>
+            <h3>Programming &amp; Data</h3>
+            <div class="skill-pills">
+              <span>Python</span>
+              <span>Java</span>
+              <span>SQL</span>
+              <span>Machine Learning</span>
+              <span>Data Analysis</span>
+              <span>Statistical Analysis</span>
+              <span>Ansible</span>
+              <span>Terraform</span>
+              <span>Linux</span>
+              <span>Git / GitHub</span>
+            </div>
+          </div>
+
+          <div class="skill-group fade-in delay-2">
+            <div class="skill-group-icon">
+              <i data-lucide="layout-dashboard"></i>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+            <div class="skill-pills">
+              <span>Power BI</span>
+              <span>Tableau</span>
+              <span>Dataiku</span>
+              <span>Excel</span>
+              <span>Salesforce</span>
+              <span>HubSpot</span>
+              <span>Jira</span>
+              <span>bubble.io</span>
+              <span>Canva</span>
+              <span>AWS &amp; Azure</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="certs fade-in">
+          <h3 class="certs-title">Certifications</h3>
+          <div class="cert-cards">
+            <div class="cert-card">
+              <i data-lucide="award"></i
+              ><span>Strategic Management &amp; Innovation</span>
+            </div>
+            <div class="cert-card">
+              <i data-lucide="award"></i
+              ><span>Microsoft Excel for Business – Macquarie University</span>
+            </div>
+            <div class="cert-card">
+              <i data-lucide="award"></i><span>Google Project Management</span>
+            </div>
+            <div class="cert-card">
+              <i data-lucide="award"></i><span>Google Data Analytics</span>
+            </div>
+            <div class="cert-card">
+              <i data-lucide="award"></i
+              ><span>DevOps Professional – Wipro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ LEADERSHIP ═══════════════════════════ -->
+    <section id="leadership" class="section">
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Beyond Work</span>
+          <h2 class="section-title">Leadership &amp; <em>Community</em></h2>
+        </div>
+
+        <div class="leadership-grid">
+          <div class="lead-card fade-in">
+            <div class="lead-icon"><i data-lucide="users"></i></div>
+            <div>
+              <h3>Indian Catholic Youth Movement (ICYM)</h3>
+              <p class="lead-role">President &amp; Member · Neermarga</p>
+              <ul class="lead-bullets">
+                <li>
+                  Coordinated and executed
+                  <strong>10+ cultural events</strong> for Christmas and New
+                  Year's Eve celebrations within the church community
+                </li>
+                <li>
+                  Represented the parish in multiple sports events, showcasing
+                  leadership and team spirit
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lead-card fade-in delay-1">
+            <div class="lead-icon"><i data-lucide="heart-handshake"></i></div>
+            <div>
+              <h3>Volunteer Work</h3>
+              <p class="lead-role">Community Service</p>
+              <ul class="lead-bullets">
+                <li>
+                  Engaged in visits to orphanages and old age homes as part of
+                  ongoing community outreach
+                </li>
+                <li>
+                  Contributed to initiatives including the
+                  <strong>Swachh Bharat Mission</strong>
+                </li>
+                <li>
+                  Served as tutor and instructor at
+                  <strong>summer camps for high school students</strong>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="lead-card fade-in delay-2">
+            <div class="lead-icon"><i data-lucide="drama"></i></div>
+            <div>
+              <h3>Theatre &amp; Performing Arts</h3>
+              <p class="lead-role">Actor</p>
+              <ul class="lead-bullets">
+                <li>
+                  Performed roles in a full theatrical production and multiple
+                  playlets, showcasing versatility and commitment to the
+                  performing arts
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ ACHIEVEMENTS ═══════════════════════════ -->
+    <section
+      id="achievements"
+      class="section section-dark achievements-section"
+    >
+      <div class="container">
+        <div class="section-header fade-in">
+          <span class="section-label">Recognition</span>
+          <h2 class="section-title">Achievements</h2>
+        </div>
+        <div class="ach-grid">
+          <div class="ach-card fade-in">
+            <span class="ach-place gold">1st</span>
+            <p class="ach-name">Impact Innovation Challenge</p>
+            <p class="ach-org">Leroy Merlin × HEC Paris</p>
+          </div>
+          <div class="ach-card fade-in delay-1">
+            <span class="ach-place gold">1st</span>
+            <p class="ach-name">Innovation in Mobility</p>
+            <p class="ach-org">HEC Paris</p>
+          </div>
+          <div class="ach-card fade-in delay-2">
+            <span class="ach-place silver">2nd</span>
+            <p class="ach-name">L'Oréal Super Challenge</p>
+            <p class="ach-org">HEC Paris</p>
+          </div>
+          <div class="ach-card fade-in delay-2">
+            <span class="ach-place silver">2nd</span>
+            <p class="ach-name">Supply Chain Simulation</p>
+            <p class="ach-org">HEC Paris</p>
+          </div>
+          <div class="ach-card fade-in delay-2">
+            <span class="ach-place silver">700</span>
+            <p class="ach-name">GMAT</p>
+            <!-- <p class="ach-org">HEC Paris</p> -->
+          </div>
+          <div class="ach-card fade-in delay-2">
+            <span class="ach-place silver">Top 10</span>
+            <p class="ach-name">Inginius 2k17</p>
+            <p class="ach-org">PESIT Bangalore</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="orb orb-4"></div>
+      <div class="container contact-inner">
+        <div class="fade-in">
+          <span class="section-label">Get in Touch</span>
+          <h2 class="section-title contact-title">
+            Let's Build<br /><em>Something Great</em>
+          </h2>
+          <br />
+          <p class="contact-sub">
+            Open to opportunities in Digital Strategy, AI, Product, and
+            Consulting. Always happy to connect.
+          </p>
+        </div>
+        <div class="contact-links fade-in delay-1">
+          <a href="mailto:denziljosteve@gmail.com" class="contact-link">
+            <i data-lucide="mail"></i>
+            <div>
+              <span class="cl-label">Email</span>
+              <span class="cl-val">denziljosteve@gmail.com</span>
+            </div>
+          </a>
+          <a
+            href="https://linkedin.com/in/denziljosteve"
+            target="_blank"
+            class="contact-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="color: var(--gold); flex-shrink: 0"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+            <div>
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-val">Denzil Josteve Fernandes</span>
+            </div>
+          </a>
+          <a href="tel:+918867259630" class="contact-link">
+            <i data-lucide="phone"></i>
+            <div>
+              <span class="cl-label">Phone</span>
+              <span class="cl-val">+91 886 725 9630</span>
+            </div>
+          </a>
+        </div>
+        <a
+          href="Denzil Josteve Fernandes_CV.pdf"
+          class="btn btn-primary btn-large fade-in delay-2"
+          download
+        >
+          Download Full CV &nbsp;<i data-lucide="download"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+    <footer>
+      <p>&nbsp;·&nbsp; © 2026 Denzil Josteve Fernandes &nbsp;·&nbsp;</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
