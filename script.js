@@ -9,6 +9,20 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 1. Lucide icons ──────────────────────────────────────
   if (window.lucide) lucide.createIcons();
 
+  // ── 1b. Theme toggle ─────────────────────────────────────
+  const rootEl = document.documentElement;
+  const stored = localStorage.getItem('theme');
+  if (stored === 'light') rootEl.setAttribute('data-theme', 'light');
+
+  const applyTheme = () => {
+    rootEl.setAttribute('data-theme', rootEl.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+    localStorage.setItem('theme', rootEl.getAttribute('data-theme'));
+  };
+
+  document.querySelectorAll('.theme-toggle').forEach(btn => {
+    btn.addEventListener('click', applyTheme);
+  });
+
   // ── 2. Navbar scroll state ───────────────────────────────
   const navbar = document.getElementById('navbar');
   const onScroll = () => {

@@ -7,6 +7,7 @@
 /* ── CSS Variables ── */
 :root {
   --black:    #0a0a0a;
+  --bg:       #0a0a0a;
   --dark:     #111111;
   --card:     #161616;
   --card-2:   #1c1c1c;
@@ -27,6 +28,31 @@
 
   --trans: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* ── Light Theme ── */
+html[data-theme="light"] {
+  --bg:       #f7f4ee;
+  --dark:     #ece9e1;
+  --card:     #ffffff;
+  --card-2:   #f5f2ea;
+  --border:   rgba(20,20,20,0.12);
+  --white:    #1c1917;
+  --muted:    rgba(20,20,20,0.55);
+  --body:     rgba(20,20,20,0.74);
+}
+html[data-theme="light"] #navbar.scrolled { background: rgba(255,255,255,0.9); }
+html[data-theme="light"] .mobile-menu { background: rgba(255,255,255,0.97); }
+html[data-theme="light"] .grid-overlay {
+  background-image:
+    linear-gradient(rgba(20,20,20,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20,20,20,0.05) 1px, transparent 1px);
+}
+html[data-theme="light"] .hero-metrics,
+html[data-theme="light"] .pill,
+html[data-theme="light"] .edu-courses li,
+html[data-theme="light"] .project-tags span,
+html[data-theme="light"] .skill-pills span { background: rgba(20,20,20,0.035); }
+html[data-theme="light"] .silver { color: #8a8f9c; }
 
 
 /* ── Hero Avatar ── */
@@ -61,11 +87,12 @@ html { scroll-behavior: smooth; font-size: 16px; }
 
 body {
   font-family: var(--ff-body);
-  background: var(--black);
+  background: var(--bg);
   color: var(--body);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  transition: background-color var(--trans), color var(--trans);
 }
 
 a { text-decoration: none; color: inherit; }
@@ -118,6 +145,7 @@ img { display: block; max-width: 100%; }
   transition: color var(--trans);
 }
 .nav-links a:hover { color: var(--white); }
+.nav-links a svg { width: 18px; height: 18px; display: block; }
 .nav-links .nav-cta {
   color: var(--gold);
   border: 1px solid var(--gold);
@@ -128,6 +156,24 @@ img { display: block; max-width: 100%; }
   background: var(--gold);
   color: var(--black);
 }
+
+/* Theme toggle */
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  transition: color var(--trans), transform var(--trans);
+}
+.theme-toggle:hover { color: var(--gold); transform: translateY(-1px); }
+.theme-toggle svg { width: 18px; height: 18px; }
+.theme-toggle .icon-light { display: none; }
+html[data-theme="light"] .theme-toggle .icon-dark { display: none; }
+html[data-theme="light"] .theme-toggle .icon-light { display: block; }
 
 /* Hamburger */
 .hamburger {
@@ -163,6 +209,21 @@ img { display: block; max-width: 100%; }
 }
 .mobile-menu a:hover { color: var(--gold); }
 .mobile-menu.open { display: flex; }
+.mobile-menu-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 0.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+.mobile-menu-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.mobile-menu-actions a svg { width: 18px; height: 18px; color: var(--gold); }
 
 /* ══════════════════════════════════════════
    HERO
@@ -177,7 +238,8 @@ img { display: block; max-width: 100%; }
   text-align: center;
   padding: 120px 2rem 80px;
   overflow: hidden;
-  background: var(--black);
+  background: var(--bg);
+  transition: background-color var(--trans);
 }
 
 /* Ambient orbs */
@@ -628,6 +690,16 @@ img { display: block; max-width: 100%; }
 }
 .edu-period svg { width: 13px; height: 13px; }
 
+.edu-thesis {
+  font-size: 0.85rem;
+  color: var(--body);
+  border-left: 2px solid rgba(201,168,76,0.4);
+  padding-left: 0.9rem;
+  margin-bottom: 1.25rem;
+  line-height: 1.6;
+}
+.edu-thesis strong { color: var(--gold); font-weight: 600; }
+
 .edu-courses {
   display: flex;
   flex-wrap: wrap;
@@ -810,7 +882,7 @@ img { display: block; max-width: 100%; }
 .achievements-section { padding: 5rem 2rem; }
 .ach-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 .ach-card {
@@ -867,31 +939,35 @@ img { display: block; max-width: 100%; }
   margin: -1rem auto 0;
 }
 .contact-links {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   width: 100%;
-  max-width: 860px;
-  flex-wrap: wrap;
+  max-width: 100%;
   justify-content: center;
 }
 .contact-link {
-  flex: 1;
-  min-width: 200px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 1.1rem 1.5rem;
+  padding: 1rem 1.25rem;
   transition: border-color var(--trans), transform var(--trans);
+  overflow: hidden;
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
 }
 .contact-link:hover {
   border-color: rgba(201,168,76,0.4);
   transform: translateY(-3px);
 }
-.contact-link > svg { color: var(--gold); width: 22px; height: 22px; flex-shrink: 0; }
+.contact-link > svg,
+.contact-link > i { color: var(--gold); width: 22px; height: 22px; flex-shrink: 0; }
+.contact-link > div { width: 100%; min-width: 0; text-align: left; }
 .cl-label {
   display: block;
   font-size: 0.7rem;
@@ -906,6 +982,9 @@ img { display: block; max-width: 100%; }
   font-weight: 500;
   color: var(--white);
   margin-top: 0.1rem;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 
@@ -992,6 +1071,8 @@ footer {
   color: var(--muted);
   letter-spacing: 0.04em;
 }
+footer a { color: var(--muted); transition: color var(--trans); }
+footer a:hover { color: var(--gold); }
 
 /* ══════════════════════════════════════════
    ANIMATIONS
@@ -1029,6 +1110,7 @@ footer {
 ══════════════════════════════════════════ */
 @media (max-width: 1024px) {
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .ach-grid { grid-template-columns: repeat(2, 1fr); }
   .two-col { gap: 3rem; }
 }
 
@@ -1055,6 +1137,7 @@ footer {
 
   .section { padding: 5rem 1.25rem; }
   .hero-sub .br-desktop { display: none; }
+  .contact-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 480px) {
@@ -1062,4 +1145,6 @@ footer {
   .btn { width: 100%; justify-content: center; }
   .hero-metrics { flex-direction: column; gap: 1rem; }
   .metric-divider { display: none; }
+  .contact-links { grid-template-columns: minmax(0, 1fr); }
+  .contact-link { min-width: 0; }
 }
